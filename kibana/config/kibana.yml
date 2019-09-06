@@ -1,0 +1,18 @@
+---
+## Default Kibana configuration from kibana-docker.
+## https://github.com/elastic/kibana-docker/blob/master/.tedi/template/kibana.yml.j2
+#
+server.name: kibana
+server.host: "0"
+elasticsearch.hosts: [ "https://elasticsearch:9200" ]
+xpack.monitoring.ui.container.elasticsearch.enabled: true
+
+## X-Pack security credentials
+#
+#elasticsearch.username: elastic
+#elasticsearch.password: changeme
+
+server.ssl.enabled: true
+server.ssl.certificate: /usr/share/elasticsearch/config/certificates/kibana/kibana.crt
+server.ssl.key: /usr/share/elasticsearch/config/certificates/kibana/kibana.key
+elasticsearch.ssl.certificateAuthorities: /usr/share/elasticsearch/config/certificates/ca/ca.crt

@@ -1,0 +1,15 @@
+---
+## Default Logstash configuration from logstash-docker.
+## from https://github.com/elastic/logstash-docker/blob/master/build/logstash/config/logstash-full.yml
+#
+http.host: "0.0.0.0"
+xpack.monitoring.elasticsearch.hosts: [ "https://elasticsearch:9200" ]
+
+## X-Pack security credentials
+# Auth and Roles
+xpack.monitoring.enabled: true
+xpack.monitoring.elasticsearch.username: elastic
+xpack.monitoring.elasticsearch.password: changeme
+
+# Xpack TLS declaration linked with cert volume where pem are stored
+xpack.monitoring.elasticsearch.ssl.certificate_authority: /usr/share/elasticsearch/config/certificates/ca/ca.crt
