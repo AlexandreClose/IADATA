@@ -1,0 +1,43 @@
+{
+    "id": "urn:ngsi-ld:CityDistrict:emp-toulouse-amidonniers-campans-caffarelli",
+    "type": "CityDistrict",
+    "description": "description in english",
+    "description_fr": "description in _fr",
+    "information": "information in english",
+    "information_fr": "information in _fr",
+    "location": {
+        "type": "GeoProperty",
+        "value": {
+            "type": "Polygon",
+            "coordinates": [
+                [-4.7299180606009, 41.6844918725019],
+                [-4.72855890957602, 41.6860596957855],
+                [-4.5520357341647, 41.8569278186523],
+                [-4.55167335377909, 41.8570461783071],
+                [-4.7299180606009, 41.6844918725019]
+            ]
+        }
+    },
+    "admDistrictNumber": {
+        "type": "Property",
+        "value": 1
+    },
+    "admName": {
+        "type": "Property",
+        "value": "PERI"
+    },
+    "admAera": {
+        "type": "CVRes"
+    },
+	"refJoinedDistricts": {
+		"type":"Relationship",
+		"object":[
+			"urn:ngsi-ld:CityDistrict:emp-toulouse-amidonniers-campans-caffarelli",
+			"urn:ngsi-ld:CityDistrict:emp-toulouse-borderouge",
+			"urn:ngsi-ld:CityDistrict:emp-toulouse-montaudran-la-terasse"
+		]
+	},
+    "@context": [
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+    ]
+}

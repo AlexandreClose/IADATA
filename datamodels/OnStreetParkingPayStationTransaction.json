@@ -1,0 +1,128 @@
+{
+    "id": "urn:ngsi-ld:OnStreetParkingPayStationTransaction:emp-toulouse-onstreetparkingpaystationtransaction-0000001",
+    "type": "OnStreetParkingPayStationTransaction",
+    "description":"description in english" 
+    "description_fr":"description en _fr" 
+    "modifiedAt":"2018-06-02T09:25:55.00Z"
+    "createdAt": "2018-06-02T09:25:55.00Z"
+    "admMachineNumber": {
+		"type": "Property",
+		"value": 34
+	},
+	"admFreeDuration": 
+	{
+		"type": "Property",
+		"value": {
+			"type": "Time",
+			"value": "00:00:00Z"
+		}
+	},
+	"admServerDateTime": 
+	{
+		"type": "Property",
+		"value": {
+			"type": "DateTime",
+			"value": "2018-02-02T00:00:00Z"
+		}
+	},
+	"admOnStreetParkingPayStationDateTime": 
+	{
+		"type": "Property",
+		"value": {
+			"type": "DateTime",
+			"value": "2018-02-02T00:00:00Z"
+		}
+	},
+	"admParkingEndValidity": 
+	{
+		"type": "Property",
+		"value": {
+			"type": "DateTime",
+			"value": "2018-02-02T00:00:00Z"
+		}
+	},
+	"admRealParkingDuration": 
+	{
+		"type": "Property",
+		"value": {
+			"type": "Time",
+			"value": "02:00:00Z"
+		}
+	},
+	"admPayedParkingDuration": 
+	{
+		"type": "Property",
+		"value": {
+			"type": "Time",
+			"value": "02:00:00Z"
+		}
+	},
+	"admUserType": 
+	{
+		"type": "Property",
+		"value": "1",
+	},
+	"admVersion": 
+	{
+		"type": "Property",
+		"value": "1",
+	},
+	"admTransactionNumber": 
+	{
+		"type": "Property",
+		"value": "554548121215",
+	},
+	"admParkingCode": 
+	{
+		"type": "Property",
+		"value": "10"
+	},
+	"admParkingName": 
+	{
+		"type": "Property",
+		"value": "TOULOUSE"
+	},
+	"admStreetNumber": 
+	{
+		"type": "Property",
+		"value": "32"
+	},
+	"admStreetName": 
+	{
+		"type": "Property",
+		"value": "RUE DES COUTELIERS"
+	},
+	"admDistrictName": 
+	{
+		"type": "Property",
+		"value": "18/9 COUTELIERS"
+	},
+	"admCityName": 
+	{
+		"type": "Property",
+		"value": "TOULOUSE"
+	},
+	"admPostalCodeINSEE": 
+	{
+		"type": "Property",
+		"value": "31555"
+	},
+    "admAreaServed": {
+        "type": "Property",
+        "value": "CARMES"
+    },
+	"admRuleNumber": 
+	{
+		"type": "Property",
+		"value": "3a"
+	},
+    "refOnStreetParkingPayStation": {
+        "type": "Relationship",
+        "object": [
+            "urn:ngsi-ld:OnStreetParkingPayStation:emp-toulouse-onstreetparkingpaystation-001"
+        ]
+    }
+	"@context": [
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+    ]
+}
