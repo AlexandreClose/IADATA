@@ -1,139 +1,146 @@
 {
     "id": "urn:ngsi-ld:OnStreetParkingPayStation:emp-toulouse-onstreetparkingpaystation-001",
     "type": "OnStreetParkingPayStation",
-    "description":"description in english" 
-    "description_fr":"description en _fr" 
-    "modifiedAt":"2018-06-02T09:25:55.00Z"
-    "createdAt": "2018-06-02T09:25:55.00Z"
+    "createdAt": "2018-06-02T09:25:55.00Z",
+    "modifiedAt": "2018-06-02T09:25:55.00Z",
+    "description": {
+        "type": "Property",
+        "value": "description in english"
+    },
+    "description_fr": {
+        "type": "Property",
+        "value": "description en francais"
+    },
     "location": {
         "type": "GeoProperty",
         "value": {
-            "type": "Point",
-            "coordinates": [-3.80356167695194, 43.46296641666926]
+            "coordinates": [
+                -3.80356167695194,
+                43.46296641666926
+            ],
+            "type": "Point"
         }
-    },
-    "absTotalSpotNumber": {
-        "type": "Property",
-        "value": 6
     },
     "absAvailableSpotNumber": {
         "type": "Property",
         "value": 6
     },
-    "absPermitActiveHours": {
+    "absDateLastDisconnect": {
         "type": "Property",
-        "value": "Mo, Tu, We, Th, Fr, Sa, Su 09:00-20:00"
-        
+        "value": {
+            "@type": "DateTime",
+            "@value": "2018-06-02T09:25:55.00Z"
+        }
+    },
+    "absDisplayType": {
+        "type": "Property",
+        "value": "color"
+    },
+    "absIsBankingKeyboardProvided": {
+        "type": "Property",
+        "value": {
+            "@type": "Boolean",
+            "@value": "True"
+        }
+    },
+    "absIsConnected": {
+        "connectionMethod": {
+            "type": "Property",
+            "value": {
+                "@type": "List",
+                "@value": [
+                    "4G"
+                ]
+            }
+        },
+        "type": "Property",
+        "value": {
+            "@type": "Boolean",
+            "@value": "True"
+        }
+    },
+    "absIsLinkedToBank": {
+        "type": "Property",
+        "value": {
+            "@type": "Boolean",
+            "@value": "True"
+        }
+    },
+    "absIsOnDeviceKeyboard": {
+        "type": "Property",
+        "value": {
+            "@type": "Boolean",
+            "@value": "True"
+        }
     },
     "absMaximumAllowedStay": {
         "type": "Property",
-        "value": "2H"
+        "value": {
+            "@type": "Duration",
+            "@value": "PT2H"
+        }
     },
-    "absDateLastDisconnect": {
-		"type": "Property",
-		"value": {
-			"type": "DateTime",
-			"value": "2018-06-02T09:25:55.00Z"
-		}
-	},
-    "absIsConnected": {
-		"type": "Property",
-		"value": {
-				"type": "Boolean",
-				"value": "True"
-		},
-		"connectionMethod" : {
-				"type": "List",
-				"value": ["4G"]
-		}
-	},
-	"absIsOnDeviceKeyboard": {
-		"type": "Property",
-		"value": {
-			"type": "Boolean",
-			"value": "True"
-		}
-	},
-	"absDisplayType": 
-	{
-		"type": "Property",
-		"value": "color"
-	},
-	"absIsLinkedToBank": {
-		"type": "Property",
-		"value": {
-			"type": "Boolean",
-			"value": "True"
-		}
-	},
-	"absIsBankingKeyboardProvided": {
-		"type": "Property",
-		"value": {
-			"type": "Boolean",
-			"value": "True"
-		}
-	},
-    "admMachineNumber": {
-		"type": "Property",
-		"value": 34
-	},
-	"admPayRate": 
-	{
-		"type": "Property",
-		"value": "1.50%"
-	},
-	"admDisplayedRule_fr": 
-	{
-		"type": "Property",
-		"value": "Stationnement payant et residant de 18h a 9h le lendemain"
-	},
-	"admStreetNumber": 
-	{
-		"type": "Property",
-		"value": "32"
-	},
-	"admStreetName": 
-	{
-		"type": "Property",
-		"value": "RUE DES COUTELIERS"
-	},
-	"admDistrictName": 
-	{
-		"type": "Property",
-		"value": "18/9 COUTELIERS"
-	},
-	"admCityName": 
-	{
-		"type": "Property",
-		"value": "TOULOUSE"
-	},
-	"admPostalCodeINSEE": 
-	{
-		"type": "Property",
-		"value": "31555"
-	},
+    "absPermitActiveHours": {
+        "type": "Property",
+        "value": "Mo, Tu, We, Th, Fr, Sa, Su 09:00-20:00"
+    },
+    "absTotalSpotNumber": {
+        "type": "Property",
+        "value": 6
+    },
     "admAreaServed": {
         "type": "Property",
         "value": "CARMES"
     },
-	"admRuleNumber": 
-	{
-		"type": "Property",
-		"value": "3a"
-	},
-    "refCityArea": {
-        "type": "Relationship",
-        "object": [
-            "urn:ngsi-ld:CityDistrict:emp-toulouse-amidonniers-campans-caffarelli"
-        ]
+    "admCityName": {
+        "type": "Property",
+        "value": "TOULOUSE"
+    },
+    "admDisplayedRule_fr": {
+        "type": "Property",
+        "value": "Stationnement payant et residant de 18h a 9h le lendemain"
+    },
+    "admDistrictName": {
+        "type": "Property",
+        "value": "18/9 COUTELIERS"
+    },
+    "admMachineNumber": {
+        "type": "Property",
+        "value": 34
+    },
+    "admPayRate": {
+        "type": "Property",
+        "value": "1.50%"
+    },
+    "admPostalCodeINSEE": {
+        "type": "Property",
+        "value": "31555"
+    },
+    "admRuleNumber": {
+        "type": "Property",
+        "value": "3a"
+    },
+    "admStreetName": {
+        "type": "Property",
+        "value": "RUE DES COUTELIERS"
+    },
+    "admStreetNumber": {
+        "type": "Property",
+        "value": "32"
     },
     "refCity": {
-        "type": "Relationship",
         "object": [
             "urn:ngsi-ld:City:adm-toulouse"
-        ]
-    }
-	"@context": [
+        ],
+        "type": "Relationship"
+    },
+    "refCityArea": {
+        "object": [
+            "urn:ngsi-ld:CityDistrict:emp-toulouse-amidonniers-campans-caffarelli"
+        ],
+        "type": "Relationship"
+    },
+    "@context": [
         "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
     ]
 }

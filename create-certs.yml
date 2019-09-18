@@ -19,7 +19,7 @@ services:
     working_dir: /usr/share/elasticsearch
     volumes: ['certs:/certs', '.:/usr/share/elasticsearch/config/certificates']
     environment:
-      - network.host=_eth0_    
+      - network.host=enp2s0  
     networks:
       - elk
       
